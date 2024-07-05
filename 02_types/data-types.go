@@ -19,7 +19,7 @@ func printType() {
 
 	var byteVal byte
 
-	var runVal rune
+	var runeVal rune
 
 	fmt.Printf("%T", temp)
 	fmt.Printf("%T", name)
@@ -32,5 +32,5 @@ func printType() {
 
 	fmt.Printf("%T", byteVal)
 
-	fmt.Printf("%T", runVal)
+	fmt.Printf("%T", runeVal)
 }
