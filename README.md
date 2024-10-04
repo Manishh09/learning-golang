@@ -1,4 +1,4 @@
-# golang-course
+# learning-golang
 Golang learning series
 
 ➡ go run <file_name> for running the program
