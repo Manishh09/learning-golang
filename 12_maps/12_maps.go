@@ -21,14 +21,4 @@ func main() {
 	for key, value := range sampleMap {
 		fmt.Println(key, value)
 	}
-
-	// map with `value` as any type
-
-	mapIV := make(map[string]interface{})
-
-	mapIV["key1"] = "Hi"
-
-	mapIV["key2"] = true
-
-	fmt.Println(mapIV)
 }
