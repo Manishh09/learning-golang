@@ -14,6 +14,7 @@ type address struct {
 }
 
 func main() {
+
 	// first approach
 	// emp := employee{
 	// 	"S",
