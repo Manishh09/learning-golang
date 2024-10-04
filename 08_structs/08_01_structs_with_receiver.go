@@ -35,19 +35,34 @@ func main() {
 			location: "Hyd",
 		},
 	}
+	temp := &emp3
 
-	emp3.save("Will")
+	temp.save("Will")
 
-	emp3.showDetails()
+	//emp3.showDetails()
 
+	// slice
+
+	tempslc := []string{"A", "N", "M"}
+
+	res := updateSlc(tempslc)
+
+	fmt.Println("slc", res)
+
+}
+
+func updateSlc(sl []string) []string {
+	sl[1] = "Q"
+	return sl
 }
 
 func (e employee) showDetails() {
-	fmt.Printf("%+v", e)
+	fmt.Println(e)
 }
 
-func (e employee) save(des string) {
-	e.name = des
+func (e *employee) save(des string) {
+
+	(*e).name = des
 }
 
 /******* Before Save
